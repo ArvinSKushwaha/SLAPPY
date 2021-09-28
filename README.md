@@ -1,5 +1,11 @@
-# SLAPPY
+# SPADE
 
-Simulating Laser And Plasma Physics, Ya know?
+**S**imulating
 
-*Just a fun project to explore complex electromagnetic simulations.*
+**PA**rtial
+
+**D**ifferential
+
+**E**quations
+
+*Just a fun project to explore complex dynamical systems.*
