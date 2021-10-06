@@ -1,11 +1,29 @@
 """This module handles the Operator class and its subclasses, each of which represent an operation on a Symbol.
 Instructions on extending these classes will be given in the documentation."""
+from typing import Type
+
 from .symbol import Symbol
 
 
 class Operator(Symbol):
     """The Operator class superclasses all operations on Fields, Functions, and Constants."""
     ...
+
+
+class OperatorRegistry:
+    def __init__(self):
+        self.operators: set[Type[Operator]] = {
+            Add,
+            Subtract,
+            Multiply,
+            Divide,
+            Grad,
+            Div,
+            Laplacian
+        }
+
+    def add_operator(self, operator: Type[Operator]) -> None:
+        self.operators.add(operator)
 
 
 class Add(Operator):
